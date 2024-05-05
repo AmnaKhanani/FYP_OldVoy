@@ -1,0 +1,46 @@
+.searchBar {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 .3rem;
+    height: 3rem;
+    border-radius: 5rem ;
+    gap: 9rem;
+}
+
+.searchIcons{
+
+    color: #fff;
+    background: linear-gradient(190deg, #004f82, #14c3d4);
+    width: 6rem!important;
+    height: 2.4rem!important;
+    border-radius: 20px;
+    padding: .2rem 0;
+
+}
+
+.navBar {
+    width: 70vw;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .searchBar {
+        width: 100%!important;
+        gap: 0rem;
+    }
+
+    .navBar {
+        width: 100vw !important ;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    /* .searchBar {
+        display: none;
+    } */
+    
+}

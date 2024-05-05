@@ -1,0 +1,10 @@
+/* .topBar{
+    margin-top: -90px;
+} */
+
+.dashboard {
+    display: flex;
+    align-items: start;
+    gap: .2rem  ;
+    width: 100%!important;
+}

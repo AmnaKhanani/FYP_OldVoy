@@ -1,0 +1,14 @@
+.navItems:hover {
+    background: linear-gradient(to right, #0F99A8 100%, #004F82 80%);
+    color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+.padd {
+    padding: 0 15px 0 0 !important;
+}
+
+.navItems:hover .icon {
+    color: white;
+}
+

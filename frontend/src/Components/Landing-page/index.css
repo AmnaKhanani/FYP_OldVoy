@@ -1,0 +1,294 @@
+body {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.topBar {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    font-family:sans-serif;
+    @media (0<width<600px) {
+       display: none;
+     
+    }
+}
+
+.topBarLeft {
+    width: 33%;
+    height: 6%;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+.topBarCenter {
+    width: 34%;
+    height: 6%;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+}
+
+.topBarRight {
+    width: 33%;
+    height: 6%;
+    justify-content: center;
+    display: flex;
+    padding-top: 15px;
+    /* padding-bottom: 15px */
+}
+
+
+.gradient-background {
+    background: linear-gradient(190deg, #004f82, #14c3d4);
+}
+
+
+
+.nav {
+    margin-left: 35px;
+    color: black;
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+.navbtn1 {
+    margin-left: 400px;
+    margin-right: 20px;
+    @media (0<width<800px) {
+        margin-left: 50px;
+        width: 80px;
+      
+     }
+    
+}
+.navbtn2 {
+   
+    @media (0<width<800px) {
+        margin-left: 50px;
+        margin-top: 5px;
+        width: 80px;
+      
+     }
+}
+
+.centerDiv {
+    position: relative;
+    text-align: center;
+
+}
+
+.bgImage {
+    width: 100%;
+    height: auto; 
+}
+
+.content1 {
+    position: absolute;
+    bottom: 380px;
+    left: 16;
+    margin-left: 50px;
+    font-size: 40px;
+    color: #00FFFF;
+    font-weight: 700;
+
+    @media (0<width<800px) {
+        bottom:130px;
+        font-size: 15px;
+        
+    }
+}
+
+.content2 {
+    position: absolute;
+    bottom: 150px;
+    left: 16;
+    margin-left: 50px;
+    font-size: 80px;
+    color: white;
+    font-weight: 900;
+
+    @media (0<width<800px) {
+        bottom:60px;
+        font-size: 20px; 
+    }
+}
+
+.contentBtn {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    /* -ms-transform: translate(-50%, -50%); */
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-color: rgb(43, 161, 200);
+    cursor: pointer;
+    border-radius: 90px;
+    text-align: center;
+
+    @media (0<width<800px) {
+        top:85%;
+        left:20%;
+        font-size:10px ;
+    }
+
+}
+
+.aboutUsDiv{
+    position: relative;
+
+}
+
+.heading1{
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    margin: 50px auto;
+    width: 92%;
+    overflow: hidden;
+    
+}
+
+.wrapper_img{
+    width: 55%;
+    float: left;
+    margin-right:-90px;
+    margin-top: -100px;
+    @media (0<width<800px) {
+        margin-top: -20px;
+        margin-right: 5px;
+    }
+}
+
+.wrapper .text-box{
+    margin-right: 50px;
+}
+
+.wrapper .text-box p{
+    font-size: 20px;
+    text-align: justify;
+    @media (0<width<800px) {
+        font-size: 10px;
+    }
+}
+
+.heading2{
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    @media (0<width<800px) {
+       margin-top: -60px;
+     
+    }
+}
+
+.features{
+    margin: 50px auto;
+    width: 92%;
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    @media (0<width<800px) {
+        display: flex;
+        flex-wrap: wrap;
+     
+    }
+   
+}
+
+.featuresCard{
+    margin-left: 140px;
+    margin-bottom: 50px;
+    width: 90%;
+    @media (0<width<800px) { 
+        margin-left: 35px;
+    }
+
+}
+
+.cardName{
+    text-align: center;
+}
+
+.footer{
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 20%;
+}
+
+
+.footerLeft{
+    width: 35%;
+    text-align: justify;
+    justify-content: left;
+    margin-left: 100px;
+    margin-top: 60px;
+
+}
+
+.footerLeft .link{
+    color:white;
+    margin-left: 5px;
+}
+
+
+.footerCenter{
+    width: 30%;
+    justify-content: center;
+    /* margin-left: 600px; */
+    margin-top: 60px;
+    text-align: justify;
+}
+
+.footerRight{
+    width: 25%;
+    justify-content: center;
+    /* margin-left: 600px; */
+    margin-top: 60px;
+    text-align: justify;
+}
+
+
+
+
+.footerLinks{
+    margin-left: -23px;
+}
+
+.line{
+    background-color:#004f82;
+    height: 1%;
+}
+
+.copyRight{
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+.copyRightText{
+    text-align: center;
+   
+}
