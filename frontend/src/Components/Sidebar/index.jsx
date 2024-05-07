@@ -53,7 +53,7 @@ export default function SideBar() {
                 onClick={handleDrawerToggle}
                 sx={{ mr: 2, display: { sm: "none" } }}
               >
-                <MenuIcon />
+                <MenuIcon/>
               </IconButton>
             )} */}
           
