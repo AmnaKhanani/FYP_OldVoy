@@ -8,6 +8,8 @@ import DashBoard from './Components/Dashboard';
 import FallReports from './Components/FallReports';
 import InfoForm from './Components/InfoForm';
 import DataTable from './Components/NewComponents/DataTable';
+import Admin from './Components/Admin';
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<Signup />} />
         <Route path="/dashboard" element={<DashBoard />} />
+        <Route path="/admin" element={<Admin />} />
         <Route path="/fallreports" element={<FallReports />} />
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/info_form" element={<InfoForm />} />

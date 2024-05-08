@@ -8,3 +8,37 @@
     gap: .2rem  ;
     width: 100%!important;
 }
+.topbar1{
+/* margin: 3rem; */
+margin-left:-33rem;
+/* width: 30rem; */
+}
+
+.date{
+    width: 40vw;
+
+    margin-left: 1rem;
+    /* float: left; */
+
+}
+.input{
+    margin-top: -10rem;
+    margin-left: 17.5rem;
+    margin-top: -3.8rem;
+
+}
+.input1{
+    margin-top: -7rem;
+    margin-left: 17.5rem;
+
+}
+.leftBar{
+    margin-top: -32rem;
+    margin-left: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
