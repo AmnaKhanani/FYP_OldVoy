@@ -39,6 +39,41 @@ margin-left:-33rem;
     flex-wrap: wrap;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; 
+    height: 300px;
+    margin-left: 24%;
+  }
+  
+  .hospital-container{
+    position: absolute; 
+    top: 104px; 
+    right: 20px; 
+    width: 500px; 
+    height: 300px;
+  }
+  
+  .appointment-container{
+    position: absolute; 
+    top: 350px;  
+    width: 500px; 
+    height: 300px;
+    margin-left: 211px;
+  }
+  
+  .activities-container{
+    position: absolute; 
+    top: 380px; 
+    right: 20px; 
+    width: 500px; 
+    height: 300px;
+    left: 310px;
+    
+  }
+      
 
 
 
