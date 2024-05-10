@@ -11,14 +11,16 @@ import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import User from "../Admin/User.png";
 import Ambulance from "../Admin/Ambulance.png";
 import Appointments from "../Admin/Appointments.png";
-import Hospital from "../Admin/Hospital.png"
+import Hospital from "../Admin/Hospital.png";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 export default function DashBoard() {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
@@ -39,99 +41,73 @@ export default function DashBoard() {
           <TopBar toggleSidebar={toggleSidebar} />
 
           <div className="Admin">
-          <Typography
-                    gutterBottom
-                    variant="h4"
-                    component="div"
-                    margin={2}
-                  >
-                    Admin Dashboard
-                  </Typography>
+            <Typography gutterBottom variant="h4" component="div" margin={2}>
+              Admin Dashboard
+            </Typography>
           </div>
 
-          <Container   maxWidth="400rem" style={{
-            display: "flex",
-          }}>
-            <div className="User">
-              <Card sx={{ maxWidth: 150 }}>
-                <CardMedia style={{
-                 height:"12vh"
-                }} image={User} />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    align="center"
-                  >
-                    User
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="Ambulance">
-              <Card sx={{ maxWidth: 160 }}>
-                <CardMedia
-                  style={{
-                    height:"12vh"
-                    ,width:"5vw"
-                   }}
-                  image={Ambulance}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    align="center"
-                  >
-                    Ambulance
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="Appointments">
-              <Card sx={{ maxWidth: 160 }}>
-                <CardMedia
-                 style={{
-                  height:"12vh"
-                  ,width:"5vw"
-                 }}
-                  image={Appointments}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    align="center"
-                  >
-                    Appointments
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="Hospitals">
-              <Card sx={{ maxWidth: 160 }}>
-                <CardMedia
-                  style={{
-                    height:"12vh",
-                    width:"5vw",
-                   }}
-                  image={Hospital}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    align="center"
-                  >
-                    Hospitals
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
+          <Container
+            maxWidth="400rem"
+            style={{
+              display: "flex",
+            }}
+          >
+            <Row className="g-5">
+              {Array.from({ length: 1 }).map((_, idx) => (
+                <Col key={idx}>
+                  <Card style={{
+                    width:"15vw",margin:"5px"
+                  }}>
+                    <Card.Img variant="top" height={100} src={User} />
+                    <Card.Body>
+                      <Card.Title>User</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+            <Row className="g-5">
+              {Array.from({ length: 1 }).map((_, idx) => (
+                <Col key={idx}>
+                  <Card style={{
+                    width:"15vw",margin:"5px"
+                  }}>
+                    <Card.Img variant="top" height={100} src={Ambulance} />
+                    <Card.Body>
+                      <Card.Title>Ambulance</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+            <Row className="g-5">
+              {Array.from({ length: 1 }).map((_, idx) => (
+                <Col key={idx}>
+                  <Card style={{
+                    width:"15vw",margin:"5px"
+                  }} >
+                    <Card.Img variant="top" height={100} src={Appointments} />
+                    <Card.Body>
+                      <Card.Title >Appointments</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
+            <Row className="g-5">
+              {Array.from({ length: 1 }).map((_, idx) => (
+                <Col key={idx}>
+                  <Card style={{
+                    width:"15vw",margin:"5px"
+                  }}>
+                    <Card.Img variant="top" height={100} src={Hospital} />
+                    <Card.Body>
+                      <Card.Title>Hospitals</Card.Title>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
           </Container>
         </div>
       </div>
